@@ -1,0 +1,30 @@
+{
+  "name": "page-object-model",
+  "version": "1.0.0",
+  "description": "Cypress framework ",
+  "main": "index.js",
+  "scripts": {
+   "cy:open":"cypress open",
+   "cy:run:chrome":"cypress run --browser chrome", 
+   "cy:run:firefox":"cypress run --browser firefox",
+   "cy:run:electron":"cypress run --browser electron",
+   "cy:run-dashboard":"cypress run --record --key cdaaa876-2318-4484-9077-3b9c6dbad6a5",
+   "cy:update-snapshots":"cypress run --env updateSnapshots=true"
+  },
+  "keywords": [
+    "Framework",
+    "Pageobject",
+    "model",
+    "dashboard",
+    "cypress"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "5.3",
+    "prettier": "^2.6.0"
+  },
+  "devDependencies": {
+    "cypress-image-snapshot": "^4.0.1"
+  }
+}
