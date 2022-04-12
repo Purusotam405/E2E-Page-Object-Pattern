@@ -5,5 +5,9 @@ describe('Fedback Test Using Fixtures',()=>{
    })
    it('Should submit feedback form',()=>{
        feedbackpage.submitFeedback()
+       cy.wait(1000)
+       cy.percySnapshot()
+
+
    })
 })
