@@ -24,12 +24,13 @@
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite("visit", (originalFn, url, options) => { ... })
 import {addMatchImageSnapshotCommand} from 'cypress-image-snapshot/command'
+import '@percy/cypress'
 
 addMatchImageSnapshotCommand()
 Cypress.Commands.add('isVisible',selector=>{
     cy.get(selector).should('be.visible')
   })
-  Cypress.Commands.add('isHiddeen',selector=>{
+  Cypress.Commands.add('isHidden',selector=>{
       cy.get(selector).should('not.exist')
   })
 
@@ -47,3 +48,4 @@ Cypress.Commands.add('isVisible',selector=>{
       cy.get('#user_remember_me').click()
       cy.contains('Sign in').click()
   })
+  

@@ -4,12 +4,13 @@
   "description": "Cypress framework ",
   "main": "index.js",
   "scripts": {
-   "cy:open":"cypress open",
-   "cy:run:chrome":"cypress run --browser chrome", 
-   "cy:run:firefox":"cypress run --browser firefox",
-   "cy:run:electron":"cypress run --browser electron",
-   "cy:run-dashboard":"cypress run --record --key cdaaa876-2318-4484-9077-3b9c6dbad6a5",
-   "cy:update-snapshots":"cypress run --env updateSnapshots=true"
+    "cy:open": "cypress open",
+    "cy:run:chrome": "cypress run --browser chrome",
+    "cy:run:firefox": "cypress run --browser firefox",
+    "cy:run:electron": "cypress run --browser electron",
+    "cy:run-dashboard": "cypress run --record --key cdaaa876-2318-4484-9077-3b9c6dbad6a5",
+    "cy:update-snapshots": "cypress run --env updateSnapshots=true",
+    "cy:percy": "percy exec -- cypress run"
   },
   "keywords": [
     "Framework",
@@ -25,6 +26,8 @@
     "prettier": "^2.6.0"
   },
   "devDependencies": {
+    "@percy/cli": "^1.0.4",
+    "@percy/cypress": "^3.1.1",
     "cypress-image-snapshot": "^4.0.1"
   }
 }
